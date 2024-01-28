@@ -18,7 +18,8 @@ function Navbar() {
             <nav id="my-nav">
                 <div className="logo">
                     <a href="/">
-                        <img src={Logo} alt="Logo" />
+                        {/* <img src={Logo} alt="Logo" /> */}
+                        <h1 class="heading">ResQAI</h1>
                     </a>
                 </div>
                 <div className="menu-bar" onClick={handleShowNavbar}>
@@ -30,12 +31,12 @@ function Navbar() {
                     <li><a href="/#team" onClick={handleShowNavbar}>Team</a></li>
                     <div className="mob-btn-grp">
                         <button onClick={event =>  window.location.href='predict'}>Predict</button>
-                        <button>Shop</button>
+                        <button onClick={event =>  window.location.href='/shop'}>Shop</button>
                     </div>
                 </ul>
                 <div className="btn-grp">
-                    <button type="submit" onClick={event =>  window.location.href='/predict'}>Predict</button>
-                    <button type="submit" onClick={event =>  window.location.href='/shop'}>Shop</button>
+                    <button type="submit" onClick={event =>  window.location.href='#'}>Helpdesk</button>
+                    <button type="submit" onClick={event =>  window.location.href='#'}>Evacuation Map</button>
                 </div>
             </nav>
         </>

@@ -24,8 +24,8 @@
     margin-top: 4rem;
     padding: 1rem;
     /* background-color: #6AFF8B; */
-    box-shadow: 0 0 1rem #44C139;
-    background: rgba( 68, 193, 57, 0.58 );
+    box-shadow: 0 0 1rem #b00c00;
+    background: #b00c00d4;
     backdrop-filter: blur( 2.8px );
     -webkit-backdrop-filter: blur( 2.8x );
     border-radius: 10px;
@@ -69,8 +69,8 @@
 }
 
 #about .about-desc:hover {
-    border: .2rem solid #44C139;
-    box-shadow: 0 0 1rem #44C139;
+    border: .2rem solid #b00c00;
+    box-shadow: 0 0 1rem #b00c00;
     transform: translateZ(2rem);
 }
 

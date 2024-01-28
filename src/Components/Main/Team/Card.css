@@ -1,6 +1,16 @@
 .card {
     display: flex;
     flex-direction: column;
+    height: 20rem;
+    width: 15rem !important;
+}
+
+.socials ul li a {
+  color: #f9746b;
+}
+
+.socials ul li a:hover {
+  color: #b00c00;
 }
 
 #dev-div {
@@ -10,17 +20,18 @@
     justify-content: center;
     flex-direction: column;
     border-radius: 30px;
-    border: 1px solid var(--main-color);
+    border: 1px solid #b00c00;
     /* background: #6AFF8B; */
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.5);
     /* border: 1px solid rgba(255, 255, 255, 0.125); */
-    margin: 2rem;
+    /* margin: 2rem; */
     padding: 4rem 2rem;
     padding-bottom: 0;
-    height: fit-content;
-    min-width: 25%;
+    height: 22rem !important;
+    width: 15rem !important;
+    cursor: default;
 }
   
   #dev-div h3 {
@@ -32,8 +43,15 @@
  
   #dev-img{
     position: relative;
-    bottom: -5.5rem;
+    bottom: -3rem;
+    /* left: -1.8rem; */
     z-index: 10;
+  }
+
+  #dev-img img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
   }
 
   #dev-div .socials ul {
@@ -62,11 +80,13 @@
 
   #dev-div:hover {
     /* transform: translateZ(2rem); */
-    box-shadow: 0 0 1rem #44C139;
+    box-shadow: 0 0 1rem #b00c00;
   }
 
   @media only screen and (max-width: 1028px) {
     .card {
         transform: translateY(-4rem);
+        margin-top: 5rem;
+        width: 15rem !important;
     }
   }
